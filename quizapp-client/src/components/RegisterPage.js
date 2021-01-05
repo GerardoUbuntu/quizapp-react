@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '400px',
-    width: '80%'
+    width: '80%',
   },
 }));
 
@@ -27,7 +27,6 @@ const RegisterPage = () => {
               container
               direction="column"
               justify="space-evenly"
-              alignItems="center"
               spacing={1}
             >
               <Grid item xs={12}>
@@ -38,19 +37,46 @@ const RegisterPage = () => {
                 </Box>
               </Grid>
               <Grid item xs={12}>
-                <TextField width="100%" id="standard-basic" label="First Name" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="First Name"
+                />
               </Grid>
               <Grid item xs={12}>
-                <TextField width="100%" id="standard-basic" label="Last Name" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Last Name"
+                />
               </Grid>
               <Grid item xs={12}>
-                <TextField width="100%" id="standard-basic" label="Email" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Username"
+                />
               </Grid>
               <Grid item xs={12}>
-                <TextField id="standard-basic" label="Password" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Email"
+                />
               </Grid>
               <Grid item xs={12}>
-                <TextField id="standard-basic" label="Confirm Password" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Password"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Confirm Password"
+                />
               </Grid>
               <Grid item xs={12}>
                 <Button
@@ -63,8 +89,7 @@ const RegisterPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Typography paragraph>
-                  Already have an account?{' '}
-                  <Link to="/register"> Login </Link>
+                  Already have an account? <Link to="/login"> Login </Link>
                 </Typography>
               </Grid>
             </Grid>

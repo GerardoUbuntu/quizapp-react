@@ -7,10 +7,11 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
+import logo from '../quizapplogo1.png';
 
 const AppNavbar = () => {
   return (
-    <AppBar>
+    <AppBar title="QuizApp">
       <Toolbar>
         <Grid
           container
@@ -18,16 +19,30 @@ const AppNavbar = () => {
           justify="space-between"
           alignItems="center"
         >
-          <IconButton>
+          <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+            <img
+              src={logo}
+              alt="logo"
+              style={{ width: '100px', height: '40px' }}
+            />
+          </Link>
+
+          {/* <IconButton>
             <MenuIcon />
-          </IconButton>
-          <Typography variant="h6">Quiz App</Typography>
+          </IconButton> */}
+
           <Box>
-            <Link to="/login" style={{ textDecoration: 'none' }}>
-              <Button>Login</Button>
+            <Link
+              to="/login"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <Button color="inherit">Login</Button>
             </Link>
-            <Link to="/register" style={{ textDecoration: 'none' }}>
-              <Button>Register</Button>
+            <Link
+              to="/register"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <Button color="inherit">Register</Button>
             </Link>
           </Box>
         </Grid>

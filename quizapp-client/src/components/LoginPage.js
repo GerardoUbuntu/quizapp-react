@@ -27,21 +27,32 @@ const LoginPage = () => {
               container
               direction="column"
               justify="space-evenly"
-              alignItems="center"
               spacing={1}
             >
-              <Grid item xs={12}>
-                <Box width={1}>
-                  <Typography variant="h6" display="block" gutterBottom>
-                    LOGIN
-                  </Typography>
-                </Box>
+              <Grid>
+                <Grid item xs={12}>
+                  <Box width={1}>
+                    <Typography variant="h6" display="block" gutterBottom>
+                      LOGIN
+                    </Typography>
+                  </Box>
+                </Grid>
               </Grid>
+
               <Grid item xs={12}>
-                <TextField width="100%" id="standard-basic" label="Email" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Email"
+                />
               </Grid>
+
               <Grid item xs={12}>
-                <TextField id="standard-basic" label="Password" />
+                <TextField
+                  style={{ width: '90%' }}
+                  id="standard-basic"
+                  label="Password"
+                />
               </Grid>
               <Grid item xs={12}>
                 <Button
