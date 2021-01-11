@@ -84,7 +84,7 @@ const RegisterPage = () => {
                   color="secondary"
                   style={{ marginTop: '20px' }}
                 >
-                  Login
+                  Register
                 </Button>
               </Grid>
               <Grid item xs={12}>
