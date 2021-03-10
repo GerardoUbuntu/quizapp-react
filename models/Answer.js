@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: true,
       },
+      quizSessionId: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+      }
     });
     return Answer;
   };
