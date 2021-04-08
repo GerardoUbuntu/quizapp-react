@@ -39,6 +39,28 @@ let quizService = {
       resolve(result);
     });
   },
+
+  deleteQuiz: (id) => {
+    return new Promise(async (resolve, reject) => {
+      await Quiz.destroy({
+        where: {
+          id: id,
+        },
+      }).catch((err) => reject(err));
+      resolve(`Successfully deleted quiz with id ${id} `);
+    });
+  },
+
+  editQuiz: (quiz) => {
+    return new Promise(async (resolve, reject) => {
+      const result = await Quiz.update(user, {
+        where: {
+          id: quiz.id,
+        },
+      }).catch((err) => reject(err));
+      resolve(result);
+    });
+  },
 };
 
 module.exports = quizService;
