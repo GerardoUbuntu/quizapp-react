@@ -1,6 +1,9 @@
 # quizapp-react
 > A quiz application where a user can create their own quiz and share it to other users so it can be answered.
 
+# Status 
+> Ongoing
+
 ## Quick Start
 
  ```bash
